@@ -28,11 +28,24 @@ public class Rate {
         }
 
         // Discount Periods
-        for(Period p : discountPeriods) {
-            if(p.startHour >= p.endHour) {
+//        for(Period p : discountPeriods) {
+//            if(p.startHour >= p.endHour) {
+//                throw new IllegalArgumentException();
+//            }
+//        }
+
+        // Discount Periods
+        discountPeriods.forEach(period -> {
+            if(period.startHour > period.endHour) {
                 throw new IllegalArgumentException();
             }
-        }
+        });
+
+        normalPeriods.forEach(period -> {
+            if(period.startHour > period.endHour) {
+                throw new IllegalArgumentException();
+            }
+        });
 
 
     }
