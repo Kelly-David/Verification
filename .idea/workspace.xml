@@ -40,8 +40,8 @@
       <file leaf-file-name="RateTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="270">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -242,12 +242,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517944778725</updated>
       <workItem from="1517944782725" duration="1020000" />
-      <workItem from="1517984361260" duration="763000" />
+      <workItem from="1517984361260" duration="1439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1783000" />
+    <option name="totallyTimeSpent" value="2459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -386,8 +386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
