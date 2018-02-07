@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by meudecc on 15/02/2017.
+ * Created by davidkelly on 07/02/2018.
  */
 
 public class RateTest {
