@@ -19,6 +19,9 @@ public class Rate {
         }
 
         // Discounted Rate
+        if((discountedRate.longValue() <= 0) || (discountedRate.longValue() > normalRate.longValue())) {
+            throw new IllegalArgumentException();
+        }
 
 
 
