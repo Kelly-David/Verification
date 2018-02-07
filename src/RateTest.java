@@ -3,6 +3,8 @@ import org.junit.Before;
 import static org.junit.Assert.assertEquals;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by davidkelly on 07/02/2018.
@@ -35,10 +37,10 @@ public class RateTest {
         Rate rt = new Rate(Rate.CarParkKind.MANAGEMENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
     }
 
-    @org.junit.Test
-    public void normalRateEqualOne() {
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalRateEqualOne() throws Exception {
         Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
-    }
+    } // Throws exception as discount !< normal.
 
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateEqualZero() throws Exception {
@@ -87,6 +89,12 @@ public class RateTest {
 
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountRateEqualToDiscount() throws Exception {
+        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void discountPeriodStartGreaterThanEnd() throws Exception {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(5, 1));}};
         Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 }

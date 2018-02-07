@@ -1,5 +1,9 @@
+import com.sun.istack.internal.NotNull;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.*;
+import java.util.function.*;
 
 
 public class Rate {
@@ -10,7 +14,7 @@ public class Rate {
 
     public Rate(CarParkKind kind, BigDecimal normalRate, BigDecimal discountedRate, ArrayList<Period> discountPeriods, ArrayList<Period> normalPeriods) {
 
-        // Check Kind
+        // Kind
         this.kind = kind;
 
         // Normal Rate
@@ -23,6 +27,12 @@ public class Rate {
             throw new IllegalArgumentException();
         }
 
+        // Discount Periods
+        for(Period p : discountPeriods) {
+            if(p.startHour >= p.endHour) {
+                throw new IllegalArgumentException();
+            }
+        }
 
 
     }
