@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Rate {
 
-    public enum CarParkKind {STAFF, STUDENT, MANAGEMNET, VISITOR};
+    public enum CarParkKind {STAFF, STUDENT, MANAGEMENT, VISITOR};
 
     CarParkKind kind;
 

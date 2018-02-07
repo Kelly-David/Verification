@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c722ff5-faf2-47fe-a73b-49ece05344c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Period.java" afterPath="$PROJECT_DIR$/src/Period.java" />
+      <change beforePath="$PROJECT_DIR$/src/Rate.java" afterPath="$PROJECT_DIR$/src/Rate.java" />
       <change beforePath="$PROJECT_DIR$/src/RateTest.java" afterPath="$PROJECT_DIR$/src/RateTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,18 +15,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Verification$RateTest_discountRateLessThan0.coverage" NAME="RateTest.discountRateLessThan0 Coverage Results" MODIFIED="1518010362286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Verification$RateTest_discountRateGreaterThanNormalRate.coverage" NAME="RateTest.discountRateGreaterThanNormalRate Coverage Results" MODIFIED="1518010437574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$RateTest_normalRateLessThanDiscountRate.coverage" NAME="RateTest.normalRateLessThanDiscountRate Coverage Results" MODIFIED="1518008353828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Verification$RateTest.coverage" NAME="RateTest Coverage Results" MODIFIED="1518007597177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Verification$RateTest.coverage" NAME="RateTest Coverage Results" MODIFIED="1518010450894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$RateTest_normalRateLessThan0.coverage" NAME="RateTest.normalRateLessThan0 Coverage Results" MODIFIED="1518007557830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$RateTest_kindValid.coverage" NAME="RateTest.kindValid Coverage Results" MODIFIED="1518007504645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Verification$RateTest_discountRateEqualZero.coverage" NAME="RateTest.discountRateEqualZero Coverage Results" MODIFIED="1518010397466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Rate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,10 +43,9 @@
       <file leaf-file-name="Period.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Period.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding>
-                <element signature="e#185#186#0" expanded="true" />
                 <element signature="e#209#210#0" expanded="true" />
                 <element signature="e#236#237#0" expanded="true" />
                 <element signature="e#263#264#0" expanded="true" />
@@ -52,8 +57,8 @@
       <file leaf-file-name="RateTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="183">
+              <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RateTest">
+  <component name="RunManager" selected="JUnit.RateTest.kindIsValid">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -199,14 +204,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RateTest.normalRateEqualZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RateTest.discountRateEqualZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RateTest" />
-      <option name="METHOD_NAME" value="normalRateEqualZero" />
+      <option name="METHOD_NAME" value="discountRateEqualZero" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -219,14 +224,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RateTest.normalRateGreaterThanDiscountRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RateTest.discountRateGreaterThanNormalRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RateTest" />
-      <option name="METHOD_NAME" value="normalRateGreaterThanDiscountRate" />
+      <option name="METHOD_NAME" value="discountRateGreaterThanNormalRate" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -239,14 +244,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RateTest.normalRateLessThan0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RateTest.discountRateLessThan0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RateTest" />
-      <option name="METHOD_NAME" value="normalRateLessThan0" />
+      <option name="METHOD_NAME" value="discountRateLessThan0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -259,14 +264,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RateTest.normalRateLessThanDiscountRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RateTest.kindIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RateTest" />
-      <option name="METHOD_NAME" value="normalRateLessThanDiscountRate" />
+      <option name="METHOD_NAME" value="kindIsValid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -341,18 +346,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RateTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateEqualZero" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateLessThanDiscountRate" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateGreaterThanDiscountRate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateLessThan0" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RateTest.discountRateLessThan0" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RateTest.discountRateEqualZero" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RateTest.discountRateGreaterThanNormalRate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RateTest.kindIsValid" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RateTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateLessThan0" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateGreaterThanDiscountRate" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateLessThanDiscountRate" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RateTest.normalRateEqualZero" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RateTest.kindIsValid" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RateTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RateTest.discountRateGreaterThanNormalRate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RateTest.discountRateEqualZero" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RateTest.discountRateLessThan0" />
       </list>
     </recent_temporary>
   </component>
@@ -371,14 +376,11 @@
       <updated>1517944778725</updated>
       <workItem from="1517944782725" duration="1020000" />
       <workItem from="1517984361260" duration="1574000" />
-      <workItem from="1518006770357" duration="2488000" />
+      <workItem from="1518006770357" duration="2969000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RateTest - 2018.02.07 at 12h 59m 25s.xml">
-      <configuration name="RateTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RateTest - 2018.02.07 at 13h 12m 30s.xml">
       <configuration name="RateTest" configurationId="JUnit" />
     </history-entry>
@@ -388,27 +390,30 @@
     <history-entry file="RateTest - 2018.02.07 at 13h 25m 10s.xml">
       <configuration name="RateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalRateEqualZero - 2018.02.07 at 12h 50m 10s.xml">
-      <configuration name="RateTest.normalRateEqualZero" configurationId="JUnit" />
+    <history-entry file="RateTest - 2018.02.07 at 13h 27m 19s.xml">
+      <configuration name="RateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalRateEqualZero - 2018.02.07 at 12h 50m 22s.xml">
-      <configuration name="RateTest.normalRateEqualZero" configurationId="JUnit" />
+    <history-entry file="RateTest - 2018.02.07 at 13h 34m 11s.xml">
+      <configuration name="RateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalRateGreaterThanDiscountRate - 2018.02.07 at 13h 00m 19s.xml">
-      <configuration name="RateTest.normalRateGreaterThanDiscountRate" configurationId="JUnit" />
+    <history-entry file="RateTest_discountRateEqualZero - 2018.02.07 at 13h 33m 18s.xml">
+      <configuration name="RateTest.discountRateEqualZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalRateGreaterThanZero - 2018.02.07 at 12h 48m 55s.xml">
-      <configuration name="RateTest.normalRateGreaterThanZero" configurationId="JUnit" />
+    <history-entry file="RateTest_discountRateGreaterThanNormalRate - 2018.02.07 at 13h 33m 58s.xml">
+      <configuration name="RateTest.discountRateGreaterThanNormalRate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RateTest_discountRateLessThan0 - 2018.02.07 at 13h 32m 43s.xml">
+      <configuration name="RateTest.discountRateLessThan0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RateTest_kindIsValid - 2018.02.07 at 13h 35m 01s.xml">
+      <configuration name="RateTest.kindIsValid" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RateTest_normalRateLessThan0 - 2018.02.07 at 13h 11m 58s.xml">
       <configuration name="RateTest.normalRateLessThan0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalRateLessThanDiscountRate - 2018.02.07 at 12h 59m 14s.xml">
-      <configuration name="RateTest.normalRateLessThanDiscountRate" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5082000" />
+    <option name="totallyTimeSpent" value="5563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -425,7 +430,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2917647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11805555" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18941176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12638889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -470,7 +475,6 @@
         <state relative-caret-position="45">
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding>
-            <element signature="e#185#186#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
@@ -503,7 +507,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding>
-            <element signature="e#185#186#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
@@ -542,12 +545,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Rate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Period.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="e#185#186#0" expanded="true" />
             <element signature="e#209#210#0" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
             <element signature="e#263#264#0" expanded="true" />
@@ -555,20 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="183">
+          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
