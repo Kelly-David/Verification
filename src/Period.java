@@ -8,7 +8,7 @@ public class Period {
     }
 
     int duration() {
-        return 0;
+        return this.endHour - this.startHour;
     };
 
     boolean overlaps() {

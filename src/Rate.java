@@ -18,31 +18,30 @@ public class Rate {
         this.kind = kind;
 
         // Normal Rate
-        if((normalRate.longValue() <= 0) || (normalRate.intValue() <= discountedRate.intValue())) {
+        if((normalRate.longValue() <= 0) || (normalRate.longValue() <= discountedRate.longValue())) {
             throw new IllegalArgumentException();
         }
 
         // Discounted Rate
-        if((discountedRate.longValue() <= 0) || (discountedRate.intValue() >= normalRate.intValue())) {
+        if((discountedRate.longValue() <= 0) || (discountedRate.longValue() >= normalRate.longValue())) {
             throw new IllegalArgumentException();
         }
-
-        // Discount Periods
-//        for(Period p : discountPeriods) {
-//            if(p.startHour >= p.endHour) {
-//                throw new IllegalArgumentException();
-//            }
-//        }
 
         // Discount Periods
         discountPeriods.forEach(period -> {
             if(period.startHour > period.endHour) {
                 throw new IllegalArgumentException();
             }
+            if(period.duration() > 23) {
+                throw new IllegalArgumentException();
+            }
         });
 
         normalPeriods.forEach(period -> {
             if(period.startHour > period.endHour) {
+                throw new IllegalArgumentException();
+            }
+            if(period.duration() > 23) {
                 throw new IllegalArgumentException();
             }
         });
