@@ -45,6 +45,11 @@ public class RateTest {
         Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(0), BigDecimal.valueOf(0), discountPeriods, normalPeriods);
     }
 
+    @org.junit.Test
+    public void normalRateMaxInt() {
+        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2147483647), BigDecimal.valueOf(42), discountPeriods, normalPeriods);
+    }
+
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateLessThanDiscountRate() throws Exception {
         Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(7), discountPeriods, normalPeriods);
@@ -68,5 +73,20 @@ public class RateTest {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountRateGreaterThanNormalRate() throws Exception {
         Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    @org.junit.Test
+    public void discountRateEqualToOne() {
+        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
+    }
+
+    @org.junit.Test
+    public void discountRateMaxInt() {
+        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2147483647), BigDecimal.valueOf(2147483647 - 1), discountPeriods, normalPeriods);
+    }
+
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void discountRateEqualToDiscount() throws Exception {
+        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 }

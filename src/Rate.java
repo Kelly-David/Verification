@@ -14,12 +14,12 @@ public class Rate {
         this.kind = kind;
 
         // Normal Rate
-        if((normalRate.longValue() <= 0) || (normalRate.longValue() < discountedRate.longValue())) {
+        if((normalRate.longValue() <= 0) || (normalRate.intValue() <= discountedRate.intValue())) {
             throw new IllegalArgumentException();
         }
 
         // Discounted Rate
-        if((discountedRate.longValue() <= 0) || (discountedRate.longValue() > normalRate.longValue())) {
+        if((discountedRate.longValue() <= 0) || (discountedRate.intValue() >= normalRate.intValue())) {
             throw new IllegalArgumentException();
         }
 
