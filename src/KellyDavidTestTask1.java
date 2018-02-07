@@ -10,7 +10,7 @@ import java.util.stream.Stream;
  * Created by davidkelly on 07/02/2018.
  */
 
-public class RateTest {
+public class KellyDavidTestTask1 {
     ArrayList<Period> discountPeriods;
     ArrayList<Period> normalPeriods;
 
