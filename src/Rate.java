@@ -19,7 +19,7 @@ public class Rate {
 
         //
         if(normalRate == null || discountedRate == null) {
-            throw new IllegalArgumentException();
+            throw new NullPointerException();
         }
 
         // Normal Rate
@@ -42,7 +42,7 @@ public class Rate {
             if(period.startHour > period.endHour) {
                 throw new IllegalArgumentException();
             }
-            if(period.duration() > 23) {
+            if(period.duration() > 24) {
                 throw new IllegalArgumentException();
             }
         });
@@ -51,13 +51,13 @@ public class Rate {
             if(period.startHour > period.endHour) {
                 throw new IllegalArgumentException();
             }
-            if(period.duration() > 23) {
+            if(period.duration() > 24) {
                 throw new IllegalArgumentException();
             }
         });
     }
 
-    public BigDecimal calculateCharge(Period periodStay) {
+    public BigDecimal calculate(Period periodStay) {
 
         return new BigDecimal(0);
     }
