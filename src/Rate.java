@@ -1,10 +1,13 @@
 import com.sun.istack.internal.NotNull;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.*;
 import java.util.function.*;
 
+/**
+ * DUMMY CLASS
+ * Created by davidkelly on 07/02/2018.
+ */
 
 public class Rate {
 
