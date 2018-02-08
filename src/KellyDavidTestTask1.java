@@ -21,8 +21,8 @@ public class KellyDavidTestTask1 {
     ArrayList<Period> normalPeriodsCC2;
     ArrayList<Period> normalPeriodsCC3;
 
-    // Null
-    BigDecimal b = null;
+    BigDecimal b;
+
 
     @Before
     public void instantiatePeriods() {
@@ -43,6 +43,7 @@ public class KellyDavidTestTask1 {
         discountPeriodsCC3 = new ArrayList<Period>() {{ add(new Period(0,2)); add(new Period(13,17)); add(new Period(23,24)); }};
         normalPeriodsCC3 = new ArrayList<Period>() {{ add(new Period(2,4)); add(new Period(5,12)); add(new Period(17,19)); }};
 
+        b = null;
     }
 
     /*
