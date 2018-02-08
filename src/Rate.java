@@ -8,7 +8,7 @@ import java.util.function.*;
 
 public class Rate {
 
-    public enum CarParkKind {STAFF, STUDENT, MANAGEMENT, VISITOR};
+    // public enum CarParkKind {STAFF, STUDENT, MANAGEMENT, VISITOR};
 
     CarParkKind kind;
 
@@ -17,8 +17,18 @@ public class Rate {
         // Kind
         this.kind = kind;
 
+        //
+        if(normalRate == null || discountedRate == null) {
+            throw new IllegalArgumentException();
+        }
+
         // Normal Rate
         if((normalRate.longValue() <= 0) || (normalRate.longValue() <= discountedRate.longValue())) {
+            throw new IllegalArgumentException();
+        }
+
+        // Discounted Rate
+        if((discountedRate.longValue() <= 0) || (discountedRate.longValue() >= normalRate.longValue())) {
             throw new IllegalArgumentException();
         }
 
@@ -45,8 +55,11 @@ public class Rate {
                 throw new IllegalArgumentException();
             }
         });
+    }
 
+    public BigDecimal calculateCharge(Period periodStay) {
 
+        return new BigDecimal(0);
     }
 
 }

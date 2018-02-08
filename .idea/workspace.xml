@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c722ff5-faf2-47fe-a73b-49ece05344c6" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/CarParkKind.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/RateTest.java" afterPath="$PROJECT_DIR$/src/KellyDavidTestTask1.java" />
+      <change beforePath="$PROJECT_DIR$/src/KellyDavidTestTask1.java" afterPath="$PROJECT_DIR$/src/KellyDavidTestTask1.java" />
+      <change beforePath="$PROJECT_DIR$/src/Rate.java" afterPath="$PROJECT_DIR$/src/Rate.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +33,8 @@
       <file leaf-file-name="Rate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+            <state relative-caret-position="193">
+              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +60,21 @@
       <file leaf-file-name="KellyDavidTestTask1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/KellyDavidTestTask1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4299">
-              <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+            <state relative-caret-position="438">
+              <caret line="432" column="6" lean-forward="true" selection-start-line="432" selection-start-column="6" selection-end-line="432" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarParkKind.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CarParkKind.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,6 +87,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Rate.C</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,8 +108,9 @@
         <option value="$PROJECT_DIR$/src/StudentTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Period.java" />
-        <option value="$PROJECT_DIR$/src/Rate.java" />
         <option value="$PROJECT_DIR$/src/RateTest.java" />
+        <option value="$PROJECT_DIR$/src/CarParkKind.java" />
+        <option value="$PROJECT_DIR$/src/Rate.java" />
         <option value="$PROJECT_DIR$/src/KellyDavidTestTask1.java" />
       </list>
     </option>
@@ -123,10 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,6 +161,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KellyDavidTestTask1.kindIsValid">
+  <component name="RunManager" selected="JUnit.KellyDavidTestTask1.ratesNull">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -187,14 +205,14 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="KellyDavidTestTask1.discountPeriodInValidPeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KellyDavidTestTask1.discountRateNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KellyDavidTestTask1" />
-      <option name="METHOD_NAME" value="discountPeriodInValidPeriod" />
+      <option name="METHOD_NAME" value="discountRateNull" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -207,14 +225,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="KellyDavidTestTask1.kindIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KellyDavidTestTask1.normalPeriodsNullPointer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KellyDavidTestTask1" />
-      <option name="METHOD_NAME" value="kindIsValid" />
+      <option name="METHOD_NAME" value="normalPeriodsNullPointer" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -227,14 +245,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="KellyDavidTestTask1.normalPeriodOutOfBounds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KellyDavidTestTask1.normalRateNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KellyDavidTestTask1" />
-      <option name="METHOD_NAME" value="normalPeriodOutOfBounds" />
+      <option name="METHOD_NAME" value="normalRateNull" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -247,14 +265,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="KellyDavidTestTask1.normalPeriodOutOfBoundsOnBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KellyDavidTestTask1.onlyfreePeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KellyDavidTestTask1" />
-      <option name="METHOD_NAME" value="normalPeriodOutOfBoundsOnBoundary" />
+      <option name="METHOD_NAME" value="onlyfreePeriod" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -267,14 +285,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="KellyDavidTestTask1.normalPeriodStartGreaterThanEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KellyDavidTestTask1.ratesNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KellyDavidTestTask1" />
-      <option name="METHOD_NAME" value="normalPeriodStartGreaterThanEnd" />
+      <option name="METHOD_NAME" value="ratesNull" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -348,19 +366,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.discountPeriodInValidPeriod" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodStartGreaterThanEnd" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodOutOfBounds" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodOutOfBoundsOnBoundary" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.kindIsValid" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodsNullPointer" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.onlyfreePeriod" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalRateNull" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.discountRateNull" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.ratesNull" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.kindIsValid" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodOutOfBoundsOnBoundary" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodOutOfBounds" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodStartGreaterThanEnd" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.discountPeriodInValidPeriod" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.ratesNull" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.discountRateNull" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalRateNull" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.onlyfreePeriod" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask1.normalPeriodsNullPointer" />
       </list>
     </recent_temporary>
   </component>
@@ -379,44 +397,46 @@
       <updated>1517944778725</updated>
       <workItem from="1517944782725" duration="1020000" />
       <workItem from="1517984361260" duration="1574000" />
-      <workItem from="1518006770357" duration="10719000" />
+      <workItem from="1518006770357" duration="10814000" />
+      <workItem from="1518079861310" duration="477000" />
+      <workItem from="1518087800252" duration="6897000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RateTest_discountPeriodInValidPeriod - 2018.02.07 at 19h 44m 08s.xml">
-      <configuration name="RateTest.discountPeriodInValidPeriod" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_discountRateNull - 2018.02.08 at 14h 36m 38s.xml">
+      <configuration name="KellyDavidTestTask1.discountRateNull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_discountPeriodMax - 2018.02.07 at 19h 39m 26s.xml">
-      <configuration name="RateTest.discountPeriodMax" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_lastPeriodNormalPeriodBound - 2018.02.08 at 13h 19m 27s.xml">
+      <configuration name="KellyDavidTestTask1.lastPeriodNormalPeriodBound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_discountPeriodMax - 2018.02.07 at 19h 39m 37s.xml">
-      <configuration name="RateTest.discountPeriodMax" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_normalPeriodsMaxPeriods - 2018.02.08 at 11h 39m 18s.xml">
+      <configuration name="KellyDavidTestTask1.normalPeriodsMaxPeriods" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_discountPeriodNoPeriodSpecified - 2018.02.07 at 19h 42m 39s.xml">
-      <configuration name="RateTest.discountPeriodNoPeriodSpecified" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_normalPeriodsMaxPeriods - 2018.02.08 at 11h 39m 37s.xml">
+      <configuration name="KellyDavidTestTask1.normalPeriodsMaxPeriods" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_discountPeriodOutOfBounds - 2018.02.07 at 19h 39m 23s.xml">
-      <configuration name="RateTest.discountPeriodOutOfBounds" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_normalPeriodsMaxPeriods - 2018.02.08 at 13h 19m 48s.xml">
+      <configuration name="KellyDavidTestTask1.normalPeriodsMaxPeriods" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_discountPeriodOutOfBounds - 2018.02.07 at 19h 39m 52s.xml">
-      <configuration name="RateTest.discountPeriodOutOfBounds" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_normalPeriodsNullPointer - 2018.02.08 at 14h 20m 29s.xml">
+      <configuration name="KellyDavidTestTask1.normalPeriodsNullPointer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_discountPeriodOutOfBoundsOnBoundary - 2018.02.07 at 19h 40m 41s.xml">
-      <configuration name="RateTest.discountPeriodOutOfBoundsOnBoundary" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_normalPeriodsTooManyPeriods - 2018.02.08 at 11h 39m 21s.xml">
+      <configuration name="KellyDavidTestTask1.normalPeriodsTooManyPeriods" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalPeriodOutOfBounds - 2018.02.07 at 19h 52m 22s.xml">
-      <configuration name="RateTest.normalPeriodOutOfBounds" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_normalRateNull - 2018.02.08 at 14h 34m 39s.xml">
+      <configuration name="KellyDavidTestTask1.normalRateNull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalPeriodOutOfBoundsOnBoundary - 2018.02.07 at 19h 53m 10s.xml">
-      <configuration name="RateTest.normalPeriodOutOfBoundsOnBoundary" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_normalRateNull - 2018.02.08 at 14h 35m 35s.xml">
+      <configuration name="KellyDavidTestTask1.normalRateNull" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RateTest_normalPeriodStartGreaterThanEnd - 2018.02.07 at 19h 50m 26s.xml">
-      <configuration name="RateTest.normalPeriodStartGreaterThanEnd" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask1_onlyfreePeriod - 2018.02.08 at 14h 22m 42s.xml">
+      <configuration name="KellyDavidTestTask1.onlyfreePeriod" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13313000" />
+    <option name="totallyTimeSpent" value="20782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -424,16 +444,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17294118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17294118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11805555" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28235295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16235293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -442,13 +461,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11805555" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -465,6 +485,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Rate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KellyDavidTestTask1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4470">
+          <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Period.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Rate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -557,7 +620,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="240">
             <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -567,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,10 +652,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarParkKind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Rate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        <state relative-caret-position="193">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -604,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KellyDavidTestTask1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4299">
-          <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        <state relative-caret-position="438">
+          <caret line="432" column="6" lean-forward="true" selection-start-line="432" selection-start-column="6" selection-end-line="432" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

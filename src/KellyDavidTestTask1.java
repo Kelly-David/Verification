@@ -12,7 +12,17 @@ import java.util.stream.Stream;
 
 public class KellyDavidTestTask1 {
     ArrayList<Period> discountPeriods;
+    ArrayList<Period> discountPeriodsCC1;
+    ArrayList<Period> discountPeriodsCC2;
+    ArrayList<Period> discountPeriodsCC3;
+
     ArrayList<Period> normalPeriods;
+    ArrayList<Period> normalPeriodsCC1;
+    ArrayList<Period> normalPeriodsCC2;
+    ArrayList<Period> normalPeriodsCC3;
+
+    // Null
+    BigDecimal b = null;
 
     @Before
     public void instantiatePeriods() {
@@ -20,14 +30,31 @@ public class KellyDavidTestTask1 {
         discountPeriods.add(new Period(6,7));
         normalPeriods = new ArrayList<>();
         normalPeriods.add(new Period(2,5));
+
+        // ArrayList
+        discountPeriodsCC1 = new ArrayList<Period>() {{ add(new Period(2,4)); add(new Period(18,19)); }};
+        normalPeriodsCC1 = new ArrayList<Period>() {{ add(new Period(0,2)); add(new Period(13,17)); add(new Period(23,24)); }};
+
+        // ArrayList
+        discountPeriodsCC2 = new ArrayList<Period>() {{ add(new Period(0,4)); add(new Period(23,24)); }};
+        normalPeriodsCC2 = new ArrayList<Period>() {{ add(new Period(6,23)); }};
+
+        // ArrayList
+        discountPeriodsCC3 = new ArrayList<Period>() {{ add(new Period(0,2)); add(new Period(13,17)); add(new Period(23,24)); }};
+        normalPeriodsCC3 = new ArrayList<Period>() {{ add(new Period(2,4)); add(new Period(5,12)); add(new Period(17,19)); }};
+
     }
+
+    /*
+    ----------------------------------------------- rate(...) Unit Tests -----------------------------------------------
+     */
 
     /*
     TEST 1: Kind is valid.
      */
     @org.junit.Test
     public void kindIsValid() {
-        Rate rt = new Rate(Rate.CarParkKind.VISITOR, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.VISITOR, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -35,7 +62,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateLessThan0() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STAFF, BigDecimal.valueOf(-1), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STAFF, BigDecimal.valueOf(-1), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -43,7 +70,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void normalRateGreaterThanZero() {
-        Rate rt = new Rate(Rate.CarParkKind.MANAGEMENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.MANAGEMENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
     }
 
     /*
@@ -51,7 +78,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateEqualOne() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
     } // Throws exception as discount !< normal.
 
     /*
@@ -59,7 +86,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateEqualZero() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(0), BigDecimal.valueOf(0), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(0), BigDecimal.valueOf(0), discountPeriods, normalPeriods);
     }
 
     /*
@@ -67,7 +94,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void normalRateMaxInt() {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(Integer.MAX_VALUE), BigDecimal.valueOf(42), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(Integer.MAX_VALUE), BigDecimal.valueOf(42), discountPeriods, normalPeriods);
     }
 
     /*
@@ -75,7 +102,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateLessThanDiscountRate() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(7), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(7), discountPeriods, normalPeriods);
     }
 
     /*
@@ -83,7 +110,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void normalRateGreaterThanDiscountRate() {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(4), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(4), discountPeriods, normalPeriods);
     }
 
     /*
@@ -91,7 +118,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateInvalidArgument() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf('J'), BigDecimal.valueOf('f'), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf('J'), BigDecimal.valueOf('f'), discountPeriods, normalPeriods);
     }
 
     /*
@@ -99,7 +126,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountRateLessThan0() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(-1), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(-1), discountPeriods, normalPeriods);
     }
 
     /*
@@ -107,7 +134,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountRateEqualZero() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(0), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(0), discountPeriods, normalPeriods);
     }
 
     /*
@@ -115,7 +142,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountRateGreaterThanNormalRate() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -123,7 +150,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void discountRateEqualToOne() {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
     }
 
     /*
@@ -131,7 +158,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void discountRateMaxInt() {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(Integer.MAX_VALUE), BigDecimal.valueOf(Integer.MAX_VALUE -1 ), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(Integer.MAX_VALUE), BigDecimal.valueOf(Integer.MAX_VALUE -1 ), discountPeriods, normalPeriods);
     }
 
     /*
@@ -139,7 +166,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountRateEqualToNormal() throws Exception {
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -148,7 +175,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountPeriodStartGreaterThanEnd() throws Exception {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(10, 1));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -157,7 +184,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test
     public void discountPeriodMin() {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(0, 1));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -165,8 +192,8 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void discountPeriodMax() {
-        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(0, 23));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(0, 24));}};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -175,7 +202,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountPeriodOutOfBounds() throws Exception {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(0, 48));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -183,8 +210,8 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountPeriodOutOfBoundsOnBoundary() throws Exception {
-        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(0, 24));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(0, 25));}};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -193,7 +220,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test
     public void discountPeriodValidPeriod() {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(11, 17));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -202,7 +229,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountPeriodOverlap() throws Exception {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(2, 4)); add(new Period(3, 6));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -211,7 +238,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test
     public void discountPeriodNoPeriodSpecified() {
         ArrayList<Period> discountPeriods = new ArrayList<>();
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -221,7 +248,7 @@ public class KellyDavidTestTask1 {
     public void discountPeriodOverlapWithNormal() throws Exception {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(2, 7));}};
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(6, 10));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -231,7 +258,7 @@ public class KellyDavidTestTask1 {
     public void discountPeriodOverlapWithNormalAlt() throws Exception {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(new Period(2, 7)); add(new Period(10, 23));}};
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(7, 10)); add(new Period(10, 11));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -240,7 +267,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalPeriodStartGreaterThanEnd() throws Exception {
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(10, 1));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -249,16 +276,16 @@ public class KellyDavidTestTask1 {
     @org.junit.Test
     public void normalPeriodMin() {
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(0, 1));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
-    TEST 26: normalPeriod max
+    TEST 26: normalPeriod max period
      */
     @org.junit.Test
     public void normalPeriodMax() {
-        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(0, 23));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(0, 24));}};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -267,7 +294,7 @@ public class KellyDavidTestTask1 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalPeriodOutOfBounds() throws Exception {
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(0, 48));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -275,8 +302,8 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalPeriodOutOfBoundsOnBoundary() throws Exception {
-        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(0, 24));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(0, 25));}};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -284,8 +311,8 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void normalPeriodValidPeriod() {
-        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(11, 17));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{ add(new Period(11, 17));}};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
@@ -294,7 +321,260 @@ public class KellyDavidTestTask1 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalPeriodOverlap() throws Exception {
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(new Period(2, 4)); add(new Period(3, 6));}};
-        Rate rt = new Rate(Rate.CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
+
+    /*
+    TEST 31: discountPeriods too many periods
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void discountPeriodsTooManyPeriods() throws Exception {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{
+            for (int i = 0; i < 25; i++) {
+                add(new Period(i, i + 1));
+            }
+        }};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 32: discountPeriods max number periods
+     */
+    @org.junit.Test
+    public void discountPeriodsMaxPeriods() {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{
+            for (int i = 0; i < 24; i++) {
+                add(new Period(i, i + 1));
+            }
+        }};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 33: normalPeriods too many periods
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalPeriodsTooManyPeriods() throws Exception {
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{
+            for (int i = 0; i < 25; i++) {
+                add(new Period(i, i + 1));
+            }
+        }};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 34: normalPeriods max number periods
+     */
+    @org.junit.Test
+    public void normalPeriodsMaxPeriods() {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{
+            for (int i = 0; i < 24; i++) {
+                add(new Period(i, i + 1));
+            }
+        }};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 35: only free periods
+     */
+    @org.junit.Test
+    public void onlyfreePeriod() {
+        ArrayList<Period> discountPeriods = new ArrayList<>();
+        ArrayList<Period> normalPeriods = new ArrayList<>();
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 36: normalPeriods null pointer
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalPeriodsNullPointer() throws Exception {
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 37: discountPeriods null pointer
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void discountPeriodsNullPointer() throws Exception {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 38: normal periods and discount periods null pointer
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void periodsNullPointer() throws Exception {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 39: normalRate is null
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalRateNull() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, b, BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 40: discountRate is null
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void discountRateNull() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), b, discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 41: normalRate and discountRate is null
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void ratesNull() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriods, normalPeriods);
+    }
+
+    /*
+    ------------------------------------------- calculateCharge() Unit Tests -------------------------------------------
+     */
+
+    /*
+    TEST 1: first period, normal period boundary
+     */
+    @org.junit.Test
+    public void firstPeriodNormalPeriodBound() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC1, normalPeriodsCC1);
+        Period periodStay = new Period(0,1);
+        assertEquals(BigDecimal.valueOf(3), rt.calculateCharge(periodStay));
+
+    }
+
+    /*
+    TEST 2: last period, normal period boundary
+     */
+    @org.junit.Test
+    public void lastPeriodNormalPeriodBound() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC1, normalPeriodsCC1);
+        Period periodStay = new Period(23,24);
+        assertEquals(BigDecimal.valueOf(3), rt.calculateCharge(periodStay));
+
+    }
+
+    /*
+    TEST 3: first period, discount period boundary
+     */
+    @org.junit.Test
+    public void firstPeriodDiscountPeriodBound() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC2, normalPeriodsCC2);
+        Period periodStay = new Period(0,1);
+        assertEquals(BigDecimal.valueOf(2), rt.calculateCharge(periodStay));
+
+    }
+
+    /*
+    TEST 4: last period, discount period boundary
+     */
+    @org.junit.Test
+    public void lastPeriodDiscountPeriodBound() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC2, normalPeriodsCC2);
+        Period periodStay = new Period(23,24);
+        assertEquals(BigDecimal.valueOf(2), rt.calculateCharge(periodStay));
+
+    }
+
+    /*
+    TEST 5: arbitrary period - normal rate
+     */
+    @org.junit.Test
+    public void arbitraryPeriodNormalRate() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC2, normalPeriodsCC2);
+        Period periodStay = new Period(14,17);
+        assertEquals(BigDecimal.valueOf(9), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 6: first period in normal period
+     */
+    @org.junit.Test
+    public void firstNormalPeriod() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(4), BigDecimal.valueOf(1), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(2,4);
+        assertEquals(BigDecimal.valueOf(8), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 7: last period in normal period
+     */
+    @org.junit.Test
+    public void lastNormalPeriod() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(4), BigDecimal.valueOf(1), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(17,19);
+        assertEquals(BigDecimal.valueOf(8), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 8: arbitrary period - discount rate
+     */
+    @org.junit.Test
+    public void arbitraryPeriodDiscountRate() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(4), BigDecimal.valueOf(1), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(14,17);
+        assertEquals(BigDecimal.valueOf(3), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 9: normal period and free period
+     */
+    @org.junit.Test
+    public void normalPeriodAndFreePeriod() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(18,20);
+        assertEquals(BigDecimal.valueOf(3), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 10: normal period and discount period
+     */
+    @org.junit.Test
+    public void normalPeriodAndDiscountPeriod() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(1,3);
+        assertEquals(BigDecimal.valueOf(5), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 11: discount period and free period
+     */
+    @org.junit.Test
+    public void discountPeriodAndFreePeriod() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(12,14);
+        assertEquals(BigDecimal.valueOf(2), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 12: normal, discount and free period
+     */
+    @org.junit.Test
+    public void normalDiscountFreePeriod() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(16,20);
+        assertEquals(BigDecimal.valueOf(8), rt.calculateCharge(periodStay));
+    }
+
+    /*
+    TEST 13: Free period (no charge)
+     */
+    @org.junit.Test
+    public void freePeriod() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
+        Period periodStay = new Period(20,23);
+        assertEquals(BigDecimal.valueOf(0), rt.calculateCharge(periodStay));
+    }
+
 
 }
