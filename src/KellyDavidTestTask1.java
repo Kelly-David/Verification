@@ -58,69 +58,62 @@ public class KellyDavidTestTask1 {
     public void kindIsValid() {
         Rate rt = new Rate(CarParkKind.VISITOR, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
-
     /*
-    TEST 2: normalRate < 0
-     */
-    @org.junit.Test(expected = IllegalArgumentException.class)
-    public void normalRateLessThan0() throws Exception {
-        Rate rt = new Rate(CarParkKind.STAFF, BigDecimal.valueOf(-1), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
-    }
-
-    /*
-    TEST 3: normal rate > 0
+    TEST 2: normal rate > 0
      */
     @org.junit.Test
     public void normalRateGreaterThanZero() {
         Rate rt = new Rate(CarParkKind.MANAGEMENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
     }
-
     /*
-    TEST 4: normalRate == 1
-     */
-    @org.junit.Test(expected = IllegalArgumentException.class)
-    public void normalRateEqualOne() throws Exception {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
-    } // Throws exception as discount !< normal.
-
-    /*
-    TEST 5: normalRate == 0
-     */
-    @org.junit.Test(expected = IllegalArgumentException.class)
-    public void normalRateEqualZero() throws Exception {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(0), BigDecimal.valueOf(0), discountPeriods, normalPeriods);
-    }
-
-    /*
-    TEST 6: normalRate == maxInt
+    TEST 3: normalRate == maxInt
      */
     @org.junit.Test
     public void normalRateMaxInt() {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(Integer.MAX_VALUE), BigDecimal.valueOf(42), discountPeriods, normalPeriods);
     }
-
     /*
-    TEST 7: normalRate < discountRate
-     */
-    @org.junit.Test(expected = IllegalArgumentException.class)
-    public void normalRateLessThanDiscountRate() throws Exception {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(7), discountPeriods, normalPeriods);
-    }
-
-    /*
-    TEST 8: normalRate > discountRate
+    TEST 4: normalRate > discountRate
      */
     @org.junit.Test
     public void normalRateGreaterThanDiscountRate() {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(4), discountPeriods, normalPeriods);
     }
-
     /*
-    TEST 9: normalRate, discountRate invalid argument
+    TEST 5: normalRate < 0
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalRateLessThan0() throws Exception {
+        Rate rt = new Rate(CarParkKind.STAFF, BigDecimal.valueOf(-1), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+    /*
+    TEST 6: normalRate == 1
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalRateEqualOne() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(1), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
+    } // Throws exception as discount !< normal.
+    /*
+    TEST 7: normalRate == 0
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalRateEqualZero() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(0), BigDecimal.valueOf(0), discountPeriods, normalPeriods);
+    }
+    /*
+    TEST 8: normalRate, discountRate invalid argument
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateInvalidArgument() throws Exception {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf('J'), BigDecimal.valueOf('f'), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 9: normalRate < discountRate
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalRateLessThanDiscountRate() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(7), discountPeriods, normalPeriods);
     }
 
     /*
