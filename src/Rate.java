@@ -22,7 +22,7 @@ public class Rate {
 
         //
         if(normalRate == null || discountedRate == null) {
-            throw new NullPointerException();
+            throw new IllegalArgumentException();
         }
 
         // Normal Rate

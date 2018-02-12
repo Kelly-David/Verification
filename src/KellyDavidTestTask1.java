@@ -64,7 +64,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void normalRateGreaterThanZero() {
-        Rate rt = new Rate(CarParkKind.MANAGEMENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.MANAGEMENT, BigDecimal.valueOf(2.5), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
     }
 
     /*
@@ -136,7 +136,7 @@ public class KellyDavidTestTask1 {
      */
     @org.junit.Test
     public void discountRateEqualToOne() {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(2), BigDecimal.valueOf(1.57), discountPeriods, normalPeriods);
     }
 
     /*
@@ -402,7 +402,7 @@ public class KellyDavidTestTask1 {
     /*
     TEST 38: normalPeriods null pointer
      */
-    @org.junit.Test(expected = NullPointerException.class)
+    @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalPeriodsNullPointer() throws Exception {
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
@@ -411,7 +411,7 @@ public class KellyDavidTestTask1 {
     /*
     TEST 39: discountPeriods null pointer
      */
-    @org.junit.Test(expected = NullPointerException.class)
+    @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountPeriodsNullPointer() throws Exception {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
@@ -420,7 +420,7 @@ public class KellyDavidTestTask1 {
     /*
     TEST 40: normal periods and discount periods null pointer
      */
-    @org.junit.Test(expected = NullPointerException.class)
+    @org.junit.Test(expected = IllegalArgumentException.class)
     public void periodsNullPointer() throws Exception {
         ArrayList<Period> discountPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
         ArrayList<Period> normalPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
@@ -430,7 +430,7 @@ public class KellyDavidTestTask1 {
     /*
     TEST 41: normalRate is null
      */
-    @org.junit.Test(expected = NullPointerException.class)
+    @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalRateNull() throws Exception {
         Rate rt = new Rate(CarParkKind.STUDENT, b, BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
@@ -438,7 +438,7 @@ public class KellyDavidTestTask1 {
     /*
     TEST 42: discountRate is null
      */
-    @org.junit.Test(expected = NullPointerException.class)
+    @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountRateNull() throws Exception {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), b, discountPeriods, normalPeriods);
     }
@@ -446,7 +446,7 @@ public class KellyDavidTestTask1 {
     /*
     TEST 43: normalRate and discountRate is null
      */
-    @org.junit.Test(expected = NullPointerException.class)
+    @org.junit.Test(expected = IllegalArgumentException.class)
     public void ratesNull() throws Exception {
         Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriods, normalPeriods);
     }
