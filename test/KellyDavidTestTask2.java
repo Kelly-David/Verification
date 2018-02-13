@@ -1,16 +1,15 @@
 import org.junit.Before;
 
-import static org.junit.Assert.assertEquals;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by davidkelly on 07/02/2018.
  */
 
-public class KellyDavidTestTask1 {
+public class KellyDavidTestTask2 {
     ArrayList<Period> discountPeriods;
     ArrayList<Period> discountPeriodsCC1;
     ArrayList<Period> discountPeriodsCC2;
@@ -456,6 +455,22 @@ public class KellyDavidTestTask1 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void ratesNull() throws Exception {
         Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 44: normalRate and discountRate is null
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void discountPeriodListNull() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriodsCC4, normalPeriods);
+    }
+
+    /*
+    TEST 45: normalRate and discountRate is null
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalPeriodListNull() throws Exception {
+        Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriods, normalPeriodsCC4);
     }
 
     /*
