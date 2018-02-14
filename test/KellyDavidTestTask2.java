@@ -1,9 +1,10 @@
 import org.junit.Before;
 
+import static org.junit.Assert.assertEquals;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-
-import static org.junit.Assert.assertEquals;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by davidkelly on 07/02/2018.
@@ -410,8 +411,7 @@ public class KellyDavidTestTask2 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void normalPeriodsNullPointer() throws Exception {
-        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriodsCC4);
     }
 
     /*
@@ -419,8 +419,7 @@ public class KellyDavidTestTask2 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void discountPeriodsNullPointer() throws Exception {
-        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC4, normalPeriods);
     }
 
     /*
@@ -428,9 +427,7 @@ public class KellyDavidTestTask2 {
      */
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void periodsNullPointer() throws Exception {
-        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
-        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{ Period p = null; add(p); }};
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC4, normalPeriodsCC4);
     }
 
     /*
@@ -455,22 +452,6 @@ public class KellyDavidTestTask2 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void ratesNull() throws Exception {
         Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriods, normalPeriods);
-    }
-
-    /*
-    TEST 44: normalRate and discountRate is null
-     */
-    @org.junit.Test(expected = IllegalArgumentException.class)
-    public void discountPeriodListNull() throws Exception {
-        Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriodsCC4, normalPeriods);
-    }
-
-    /*
-    TEST 45: normalRate and discountRate is null
-     */
-    @org.junit.Test(expected = IllegalArgumentException.class)
-    public void normalPeriodListNull() throws Exception {
-        Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriods, normalPeriodsCC4);
     }
 
     /*

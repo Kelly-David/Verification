@@ -21,9 +21,6 @@ public class KellyDavidTestTask1 {
     ArrayList<Period> normalPeriodsCC2;
     ArrayList<Period> normalPeriodsCC3;
 
-    ArrayList<Period> normalPeriodsCC4;
-    ArrayList<Period> discountPeriodsCC4;
-
     BigDecimal b;
 
 
@@ -46,10 +43,6 @@ public class KellyDavidTestTask1 {
         // ArrayList
         discountPeriodsCC3 = new ArrayList<Period>() {{ add(new Period(0,2)); add(new Period(13,17)); add(new Period(23,24)); }};
         normalPeriodsCC3 = new ArrayList<Period>() {{ add(new Period(2,4)); add(new Period(5,12)); add(new Period(17,19)); }};
-
-        // ArrayList (null pointers)
-        normalPeriodsCC4 = null;
-        discountPeriodsCC4 = null;
 
         b = null;
     }
