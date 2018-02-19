@@ -1,3 +1,5 @@
+//package cm;
+
 import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
@@ -452,6 +454,34 @@ public class KellyDavidTestTask2 {
     @org.junit.Test(expected = IllegalArgumentException.class)
     public void ratesNull() throws Exception {
         Rate rt = new Rate(CarParkKind.STUDENT, b, b, discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 44: discountPeriods contain null pointer
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void discountPeriodsContainNull() throws Exception {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(null);}};
+        Rate rt = new Rate(CarParkKind.VISITOR, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 45: normalPeriods contain null pointer
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void normalPeriodsContainNull() throws Exception {
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(null);}};
+        Rate rt = new Rate(CarParkKind.STAFF, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+    }
+
+    /*
+    TEST 46: normalPeriods and discountPeriods contain null pointer
+     */
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void periodsListsContainNull() throws Exception {
+        ArrayList<Period> discountPeriods = new ArrayList<Period>(){{add(null);}};
+        ArrayList<Period> normalPeriods = new ArrayList<Period>(){{add(null);}};
+        Rate rt = new Rate(CarParkKind.MANAGEMENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
     }
 
     /*
