@@ -1,3 +1,4 @@
+package cm;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -77,7 +78,7 @@ public class Rate {
 
     /**
      * checks if a period is a valid addition to a collection of periods
-     * @param period the Period addition
+     * @param period the cm.Period addition
      * @param list the collection of periods to check
      * @return true if the period does not overlap in the collecton of periods
      */
