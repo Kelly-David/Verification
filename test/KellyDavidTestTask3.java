@@ -6,6 +6,8 @@ import cm.Rate;
 import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
@@ -630,7 +632,8 @@ public class KellyDavidTestTask3 {
     public void visitorRate() {
         Rate rt = new Rate(CarParkKind.VISITOR, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
         Period periodStay = new Period(7,20);
-        assertEquals(BigDecimal.valueOf(2.5), rt.calculate(periodStay));
+        assertTrue(BigDecimal.valueOf(2.5).compareTo(rt.calculate(periodStay)) == 0);
+
     }
 
     /*
@@ -640,7 +643,7 @@ public class KellyDavidTestTask3 {
     public void managementRate() {
         Rate rt = new Rate(CarParkKind.MANAGEMENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
         Period periodStay = new Period(5,8);
-        assertEquals(BigDecimal.valueOf(2), rt.calculate(periodStay));
+        assertTrue(BigDecimal.valueOf(2).compareTo(rt.calculate(periodStay)) == 0);
     }
 
     /*
@@ -649,8 +652,8 @@ public class KellyDavidTestTask3 {
     @org.junit.Test
     public void studentRate() {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
-        Period periodStay = new Period(7,19);
-        assertEquals(BigDecimal.valueOf(8.5), rt.calculate(periodStay));
+        Period periodStay = new Period(7,18);
+        assertTrue(BigDecimal.valueOf(5).compareTo(rt.calculate(periodStay)) == 0);
     }
 
     /*
@@ -660,7 +663,8 @@ public class KellyDavidTestTask3 {
     public void staffRate() {
         Rate rt = new Rate(CarParkKind.STAFF, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
         Period periodStay = new Period(4,19);
-        assertEquals(BigDecimal.valueOf(15), rt.calculate(periodStay));
+        assertTrue(BigDecimal.valueOf(15).compareTo(rt.calculate(periodStay)) == 0);
+
     }
 
 

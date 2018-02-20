@@ -42,8 +42,8 @@
       <file leaf-file-name="Rate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+            <state relative-caret-position="201">
+              <caret line="108" column="52" lean-forward="true" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,9 +54,11 @@
       <file leaf-file-name="KellyDavidTestTask3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="631" column="40" lean-forward="false" selection-start-line="631" selection-start-column="40" selection-end-line="631" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="561">
+              <caret line="669" column="0" lean-forward="true" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,8 +101,8 @@
         <option value="$PROJECT_DIR$/test/KellyDavidTestTask1.java" />
         <option value="$PROJECT_DIR$/test/KellyDavidTestTask2.java" />
         <option value="$PROJECT_DIR$/src/Rate.java" />
-        <option value="$PROJECT_DIR$/src/cm/Rate.java" />
         <option value="$PROJECT_DIR$/test/KellyDavidTestTask3.java" />
+        <option value="$PROJECT_DIR$/src/cm/Rate.java" />
       </list>
     </option>
   </component>
@@ -390,10 +392,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.visitorRate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffRate" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffRate" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.studentRate" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.managementRate" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.studentRate" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.visitorRate" />
       </list>
     </recent_temporary>
   </component>
@@ -427,44 +429,44 @@
       <workItem from="1518962631618" duration="2220000" />
       <workItem from="1519033549016" duration="301000" />
       <workItem from="1519133261430" duration="2056000" />
-      <workItem from="1519141083588" duration="3201000" />
+      <workItem from="1519141083588" duration="7002000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KellyDavidTestTask3 - 2018.02.20 at 16h 48m 59s.xml">
-      <configuration name="KellyDavidTestTask3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KellyDavidTestTask3_managementRate - 2018.02.20 at 16h 25m 43s.xml">
+    <history-entry file="KellyDavidTestTask3_managementRate - 2018.02.20 at 19h 53m 48s.xml">
       <configuration name="KellyDavidTestTask3.managementRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_managementRate - 2018.02.20 at 16h 26m 04s.xml">
+    <history-entry file="KellyDavidTestTask3_managementRate - 2018.02.20 at 19h 53m 57s.xml">
       <configuration name="KellyDavidTestTask3.managementRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_staffRate - 2018.02.20 at 16h 29m 49s.xml">
+    <history-entry file="KellyDavidTestTask3_managementRate - 2018.02.20 at 19h 54m 34s.xml">
+      <configuration name="KellyDavidTestTask3.managementRate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KellyDavidTestTask3_staffRate - 2018.02.20 at 19h 54m 15s.xml">
       <configuration name="KellyDavidTestTask3.staffRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_staffRate - 2018.02.20 at 16h 29m 54s.xml">
+    <history-entry file="KellyDavidTestTask3_staffRate - 2018.02.20 at 20h 02m 04s.xml">
       <configuration name="KellyDavidTestTask3.staffRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_visitorRate - 2018.02.20 at 16h 47m 20s.xml">
-      <configuration name="KellyDavidTestTask3.visitorRate" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask3_studentRate - 2018.02.20 at 19h 53m 13s.xml">
+      <configuration name="KellyDavidTestTask3.studentRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_visitorRate - 2018.02.20 at 16h 47m 45s.xml">
-      <configuration name="KellyDavidTestTask3.visitorRate" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask3_studentRate - 2018.02.20 at 19h 53m 19s.xml">
+      <configuration name="KellyDavidTestTask3.studentRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_visitorRate - 2018.02.20 at 16h 47m 58s.xml">
-      <configuration name="KellyDavidTestTask3.visitorRate" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask3_studentRate - 2018.02.20 at 19h 54m 37s.xml">
+      <configuration name="KellyDavidTestTask3.studentRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_visitorRate - 2018.02.20 at 16h 48m 31s.xml">
-      <configuration name="KellyDavidTestTask3.visitorRate" configurationId="JUnit" />
+    <history-entry file="KellyDavidTestTask3_studentRate - 2018.02.20 at 19h 59m 25s.xml">
+      <configuration name="KellyDavidTestTask3.studentRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_visitorRate - 2018.02.20 at 16h 48m 42s.xml">
+    <history-entry file="KellyDavidTestTask3_visitorRate - 2018.02.20 at 19h 54m 30s.xml">
       <configuration name="KellyDavidTestTask3.visitorRate" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47912000" />
+    <option name="totallyTimeSpent" value="51713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -478,13 +480,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47013888" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15411764" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13055556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -918,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        <state relative-caret-position="201">
+          <caret line="108" column="52" lean-forward="true" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -928,9 +930,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="631" column="40" lean-forward="false" selection-start-line="631" selection-start-column="40" selection-end-line="631" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="561">
+          <caret line="669" column="0" lean-forward="true" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
