@@ -1,12 +1,13 @@
 //package cm;
 
+import cm.CarParkKind;
+import cm.Period;
+import cm.Rate;
 import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by davidkelly on 07/02/2018.
