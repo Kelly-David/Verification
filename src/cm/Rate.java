@@ -90,7 +90,7 @@ public class Rate {
      * checks if a period is a valid addition to a collection of periods
      * @param period the cm.Period addition
      * @param list the collection of periods to check
-     * @return true if the period does not overlap in the collecton of periods
+     * @return true if the period does not overlap in the collection of periods
      */
     private Boolean isValidPeriod(Period period, List<Period> list) {
         Boolean isValid = true;
@@ -101,11 +101,15 @@ public class Rate {
         }
         return isValid;
     }
-    public BigDecimal calculate(Period periodStay) {
 
+    /**
+     * calculates the total charge for the period
+     * @param periodStay the cm.Period
+     * @return BigDecimal value total charge
+     */
+    public BigDecimal calculate(Period periodStay) {
         int normalRateHours = periodStay.occurences(normal);
         int discountRateHours = periodStay.occurences(discount);
-
         if (this.kind.equals(CarParkKind.VISITOR)) {
             BigDecimal rate = (
                     visitorRateDiscount.multiply((this.hourlyNormalRate
@@ -113,11 +117,9 @@ public class Rate {
                             .add(this.hourlyDiscountedRate
                                     .multiply(BigDecimal.valueOf(discountRateHours)))
                             .add(visitorRateNoCharge)));
-
             return (rate.compareTo(BigDecimal.ZERO) > 0) ? rate : BigDecimal.ZERO;
         }
         else if (this.kind.equals(CarParkKind.STUDENT)){
-
             BigDecimal rate =
                     studentBaseLine.add(((
                             (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours)))
@@ -128,24 +130,18 @@ public class Rate {
                                     .add(this.hourlyDiscountedRate.multiply(BigDecimal.valueOf(discountRateHours))))
                                     .subtract(studentBaseLine))
                                     .multiply(studentRateDiscount)));
-
             return (rate.compareTo(BigDecimal.ZERO) > 0) ? rate : BigDecimal.ZERO;
         }
         else if (this.kind.equals(CarParkKind.STAFF)) {
-
             BigDecimal rate = (
                     this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours)))
                     .add(this.hourlyDiscountedRate
                             .multiply(BigDecimal.valueOf(discountRateHours)));
-
             return (rate.compareTo(BigDecimal.valueOf(15)) <= 0) ? rate : staffRateMaxCharge;
         }
-
         return (
                 this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours)))
                 .add(this.hourlyDiscountedRate
                         .multiply(BigDecimal.valueOf(discountRateHours)));
-
     }
-
 }

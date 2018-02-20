@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c722ff5-faf2-47fe-a73b-49ece05344c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/cm/Rate.java" afterPath="$PROJECT_DIR$/src/cm/Rate.java" />
-      <change beforePath="$PROJECT_DIR$/test/KellyDavidTestTask3.java" afterPath="$PROJECT_DIR$/test/KellyDavidTestTask3.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +19,7 @@
     <SUITE FILE_PATH="coverage/Verification$KellyDavidTestTask2_periodsNullPointer.coverage" NAME="KellyDavidTestTask2.periodsNullPointer Coverage Results" MODIFIED="1518593065631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$KellyDavidTestTask2_normalPeriodsNullPointer.coverage" NAME="KellyDavidTestTask2.normalPeriodsNullPointer Coverage Results" MODIFIED="1518593042522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$KellyDavidTestTask3_visitorRate.coverage" NAME="KellyDavidTestTask3.visitorRate Coverage Results" MODIFIED="1519145321228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Verification$KellyDavidTestTask3.coverage" NAME="KellyDavidTestTask3 Coverage Results" MODIFIED="1519145337741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Verification$KellyDavidTestTask3.coverage" NAME="KellyDavidTestTask3 Coverage Results" MODIFIED="1519156982925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$RateTest_kindValid.coverage" NAME="RateTest.kindValid Coverage Results" MODIFIED="1518007504645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$RateTest_discountRateEqualToDiscount.coverage" NAME="RateTest.discountRateEqualToDiscount Coverage Results" MODIFIED="1518011677458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Verification$KellyDavidTestTask2_discountPeriodsContainNull.coverage" NAME="KellyDavidTestTask2.discountPeriodsContainNull Coverage Results" MODIFIED="1519031791177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -54,7 +52,7 @@
       <file leaf-file-name="KellyDavidTestTask3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="594">
               <caret line="669" column="0" lean-forward="true" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -429,11 +427,14 @@
       <workItem from="1518962631618" duration="2220000" />
       <workItem from="1519033549016" duration="301000" />
       <workItem from="1519133261430" duration="2056000" />
-      <workItem from="1519141083588" duration="7002000" />
+      <workItem from="1519141083588" duration="7093000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="KellyDavidTestTask3 - 2018.02.20 at 20h 03m 04s.xml">
+      <configuration name="KellyDavidTestTask3" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="KellyDavidTestTask3_managementRate - 2018.02.20 at 19h 53m 48s.xml">
       <configuration name="KellyDavidTestTask3.managementRate" configurationId="JUnit" />
     </history-entry>
@@ -449,9 +450,6 @@
     <history-entry file="KellyDavidTestTask3_staffRate - 2018.02.20 at 20h 02m 04s.xml">
       <configuration name="KellyDavidTestTask3.staffRate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_studentRate - 2018.02.20 at 19h 53m 13s.xml">
-      <configuration name="KellyDavidTestTask3.studentRate" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="KellyDavidTestTask3_studentRate - 2018.02.20 at 19h 53m 19s.xml">
       <configuration name="KellyDavidTestTask3.studentRate" configurationId="JUnit" />
     </history-entry>
@@ -466,11 +464,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51713000" />
+    <option name="totallyTimeSpent" value="51804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -480,13 +477,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47013888" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15411764" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15411764" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13055556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -930,7 +927,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="594">
           <caret line="669" column="0" lean-forward="true" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
