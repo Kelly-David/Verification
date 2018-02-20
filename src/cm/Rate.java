@@ -25,8 +25,9 @@ public class Rate {
         if (normalRate.compareTo(BigDecimal.ZERO) < 0 || discountedRate.compareTo(BigDecimal.ZERO) < 0) {
             throw new IllegalArgumentException("A rate cannot be negative");
         }
-        if (normalRate.compareTo(discountedRate) <= 0) {
-            throw new IllegalArgumentException("The normal rate cannot be less or equal to the discounted rate");
+        if (normalRate.compareTo(discountedRate) == -1) {
+            // Task 3 - Clarification
+            throw new IllegalArgumentException("The normal rate cannot be less than discounted rate");
         }
         if (!isValidPeriods(discountPeriods) || !isValidPeriods(normalPeriods)) {
             throw new IllegalArgumentException("The periods are not valid individually");
@@ -94,8 +95,14 @@ public class Rate {
     public BigDecimal calculate(Period periodStay) {
         int normalRateHours = periodStay.occurences(normal);
         int discountRateHours = periodStay.occurences(discount);
-        return (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add(
-                this.hourlyDiscountedRate.multiply(BigDecimal.valueOf(discountRateHours)));
+        if (this.kind.equals(CarParkKind.VISITOR)) {
+            BigDecimal rate = (BigDecimal.valueOf(0.5).multiply((this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add
+                                (this.hourlyDiscountedRate.multiply(BigDecimal.valueOf(discountRateHours))).add(BigDecimal.valueOf(-10))));
+
+            return (rate.compareTo(BigDecimal.ZERO) > 0)? rate: BigDecimal.ZERO;
+        }
+        return (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add
+                (this.hourlyDiscountedRate.multiply(BigDecimal.valueOf(discountRateHours)));
     }
 
 }
