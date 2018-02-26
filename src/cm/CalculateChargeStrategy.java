@@ -26,7 +26,7 @@ class StudentRate implements CalculateChargeStrategy {
 
     @Override
     public BigDecimal calculate(BigDecimal rate) {
-        if (rate.compareTo(BigDecimal.valueOf(5.00)) > 0) {
+        if (rate.compareTo(studentBaseLine) > 0) {
             rate = studentBaseLine.add(((rate)
                     .subtract(studentBaseLine))
                     .subtract(((rate)
@@ -43,7 +43,7 @@ class StaffRate implements CalculateChargeStrategy {
 
     @Override
     public BigDecimal calculate(BigDecimal rate) {
-        return (rate.compareTo(BigDecimal.valueOf(15)) <= 0) ? rate : staffRateMaxCharge;
+        return (rate.compareTo(staffRateMaxCharge) <= 0) ? rate : staffRateMaxCharge;
     }
 }
 

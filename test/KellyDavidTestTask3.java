@@ -711,5 +711,16 @@ public class KellyDavidTestTask3 {
 
     }
 
+    /*
+   TEST 20:
+    */
+    @org.junit.Test
+    public void se() {
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(2.51), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Period periodStay = new Period(2,4);
+        assertTrue(BigDecimal.valueOf(5.02).compareTo(rt.calculate(periodStay)) == 0);
+
+    }
+
 
 }
