@@ -622,7 +622,7 @@ public class KellyDavidTestTask3 {
     public void freePeriod() {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
         Period periodStay = new Period(8,9);
-        assertEquals(BigDecimal.valueOf(0), rt.calculate(periodStay));
+        assertTrue(BigDecimal.valueOf(0).compareTo(rt.calculate(periodStay)) == 0);
     }
 
     /*
@@ -712,10 +712,10 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-   TEST 20:
+   TEST 20: Student rate - boundary
     */
     @org.junit.Test
-    public void se() {
+    public void studentRateBoundary() {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(2.51), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
         Period periodStay = new Period(2,4);
         assertTrue(BigDecimal.valueOf(5.02).compareTo(rt.calculate(periodStay)) == 0);
