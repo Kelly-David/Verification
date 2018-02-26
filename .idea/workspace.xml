@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c722ff5-faf2-47fe-a73b-49ece05344c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/CarParkKind.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/KellyDavidTestTask1.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Period.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Rate.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/KellyDavidTestTask3.java" afterPath="$PROJECT_DIR$/test/KellyDavidTestTask3.java" />
+      <change beforePath="$PROJECT_DIR$/src/cm/Rate.java" afterPath="$PROJECT_DIR$/src/cm/Rate.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Rate.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Rate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="494">
+              <caret line="139" column="82" lean-forward="false" selection-start-line="139" selection-start-column="82" selection-end-line="139" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KellyDavidTestTask3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KellyDavidTestTask3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="121">
@@ -107,8 +103,8 @@
         <option value="$PROJECT_DIR$/test/KellyDavidTestTask1.java" />
         <option value="$PROJECT_DIR$/test/KellyDavidTestTask2.java" />
         <option value="$PROJECT_DIR$/src/Rate.java" />
-        <option value="$PROJECT_DIR$/src/cm/Rate.java" />
         <option value="$PROJECT_DIR$/test/KellyDavidTestTask3.java" />
+        <option value="$PROJECT_DIR$/src/cm/Rate.java" />
       </list>
     </option>
   </component>
@@ -437,7 +433,7 @@
       <workItem from="1519133261430" duration="2056000" />
       <workItem from="1519141083588" duration="7531000" />
       <workItem from="1519647497169" duration="3342000" />
-      <workItem from="1519652611417" duration="593000" />
+      <workItem from="1519652611417" duration="760000" />
     </task>
     <servers />
   </component>
@@ -474,7 +470,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56177000" />
+    <option name="totallyTimeSpent" value="56344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -488,10 +484,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1835294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1835294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.083333336" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15411764" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15411764" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19027779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -924,20 +920,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
+    <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="121">
+          <caret line="541" column="0" lean-forward="false" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
+    <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="541" column="0" lean-forward="false" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
+        <state relative-caret-position="494">
+          <caret line="139" column="82" lean-forward="false" selection-start-line="139" selection-start-column="82" selection-end-line="139" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
