@@ -120,8 +120,11 @@ public class Rate {
             return (rate.compareTo(BigDecimal.ZERO) > 0) ? rate : BigDecimal.ZERO;
         }
         else if (this.kind.equals(CarParkKind.STUDENT)) {
-            BigDecimal rate =
-                    studentBaseLine.add(((
+
+            BigDecimal rate = this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours)).add(this.hourlyDiscountedRate.multiply(BigDecimal.valueOf(discountRateHours)));
+
+            if (rate.compareTo(BigDecimal.valueOf(5.00)) > 0) {
+               rate = studentBaseLine.add(((
                             (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours)))
                                     .add(this.hourlyDiscountedRate
                                             .multiply(BigDecimal.valueOf(discountRateHours))))
@@ -130,7 +133,10 @@ public class Rate {
                                     .add(this.hourlyDiscountedRate.multiply(BigDecimal.valueOf(discountRateHours))))
                                     .subtract(studentBaseLine))
                                     .multiply(studentRateDiscount)));
+            }
+
             return (rate.compareTo(BigDecimal.ZERO) > 0) ? rate : BigDecimal.ZERO;
+
         }
         else if (this.kind.equals(CarParkKind.STAFF)) {
             BigDecimal rate = (

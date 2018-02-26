@@ -560,9 +560,9 @@ public class KellyDavidTestTask3 {
      */
     @org.junit.Test
     public void lastNormalPeriod() {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(4), BigDecimal.valueOf(1), discountPeriodsCC3, normalPeriodsCC3);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(1), discountPeriods, normalPeriods);
         Period periodStay = new Period(17,19);
-        assertEquals(BigDecimal.valueOf(8), rt.calculate(periodStay));
+        assertEquals(BigDecimal.valueOf(8.5), rt.calculate(periodStay));
     }
 
     /*
@@ -610,9 +610,9 @@ public class KellyDavidTestTask3 {
      */
     @org.junit.Test
     public void normalDiscountFreePeriod() {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
         Period periodStay = new Period(16,20);
-        assertEquals(BigDecimal.valueOf(8), rt.calculate(periodStay));
+        assertEquals(BigDecimal.valueOf(12), rt.calculate(periodStay));
     }
 
     /*
@@ -620,8 +620,8 @@ public class KellyDavidTestTask3 {
      */
     @org.junit.Test
     public void freePeriod() {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
-        Period periodStay = new Period(20,23);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Period periodStay = new Period(8,9);
         assertEquals(BigDecimal.valueOf(0), rt.calculate(periodStay));
     }
 
@@ -631,7 +631,7 @@ public class KellyDavidTestTask3 {
     @org.junit.Test
     public void visitorRate() {
         Rate rt = new Rate(CarParkKind.VISITOR, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
-        Period periodStay = new Period(7,20);
+        Period periodStay = new Period(8,9);
         assertTrue(BigDecimal.valueOf(2.5).compareTo(rt.calculate(periodStay)) == 0);
 
     }
