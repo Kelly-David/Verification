@@ -119,7 +119,7 @@ public class Rate {
                             .add(visitorRateNoCharge)));
             return (rate.compareTo(BigDecimal.ZERO) > 0) ? rate : BigDecimal.ZERO;
         }
-        else if (this.kind.equals(CarParkKind.STUDENT)){
+        else if (this.kind.equals(CarParkKind.STUDENT)) {
             BigDecimal rate =
                     studentBaseLine.add(((
                             (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours)))
