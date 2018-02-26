@@ -540,9 +540,9 @@ public class KellyDavidTestTask3 {
      */
     @org.junit.Test
     public void arbitraryPeriodNormalRate() {
-        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC2, normalPeriodsCC2);
+        Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(3), BigDecimal.valueOf(2), discountPeriodsCC3, normalPeriodsCC3);
         Period periodStay = new Period(14,17);
-        assertEquals(BigDecimal.valueOf(9), rt.calculate(periodStay));
+        assertEquals(BigDecimal.valueOf(5.70), rt.calculate(periodStay));
     }
 
     /*
@@ -552,7 +552,7 @@ public class KellyDavidTestTask3 {
     public void firstNormalPeriod() {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(4), BigDecimal.valueOf(1), discountPeriodsCC3, normalPeriodsCC3);
         Period periodStay = new Period(2,4);
-        assertEquals(BigDecimal.valueOf(8), rt.calculate(periodStay));
+        assertEquals(BigDecimal.valueOf(7.1), rt.calculate(periodStay));
     }
 
     /*
@@ -612,7 +612,8 @@ public class KellyDavidTestTask3 {
     public void normalDiscountFreePeriod() {
         Rate rt = new Rate(CarParkKind.STUDENT, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
         Period periodStay = new Period(16,20);
-        assertEquals(BigDecimal.valueOf(12), rt.calculate(periodStay));
+        assertTrue(BigDecimal.valueOf(12).compareTo(rt.calculate(periodStay)) == 0);
+
     }
 
     /*
