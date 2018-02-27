@@ -7,7 +7,7 @@ interface CalculateChargeStrategy {
     BigDecimal calculate(BigDecimal rate);
 }
 
-class VisitorRate implements CalculateChargeStrategy {
+class VisitorBehaviour implements CalculateChargeStrategy {
 
     private BigDecimal visitorRateNoCharge = BigDecimal.valueOf(10);
     private BigDecimal visitorRateDiscount = BigDecimal.valueOf(0.5);
@@ -19,7 +19,7 @@ class VisitorRate implements CalculateChargeStrategy {
     }
 }
 
-class StudentRate implements CalculateChargeStrategy {
+class StudentBehaviour implements CalculateChargeStrategy {
 
     private BigDecimal studentBaseLine = BigDecimal.valueOf(5);
     private BigDecimal studentRateDiscount = BigDecimal.valueOf(0.3);
@@ -37,7 +37,7 @@ class StudentRate implements CalculateChargeStrategy {
     }
 }
 
-class StaffRate implements CalculateChargeStrategy {
+class StaffBehaviour implements CalculateChargeStrategy {
 
     private BigDecimal staffRateMaxCharge = BigDecimal.valueOf(15);
 
@@ -47,7 +47,7 @@ class StaffRate implements CalculateChargeStrategy {
     }
 }
 
-class ManagementRate implements CalculateChargeStrategy {
+class ManagementBehaviour implements CalculateChargeStrategy {
 
     @Override
     public BigDecimal calculate(BigDecimal rate) {

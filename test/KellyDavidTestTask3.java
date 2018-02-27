@@ -637,7 +637,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 14: Visitor Rate
+    TEST 15: Staff Rate
      */
     @org.junit.Test
     public void staffRateMaxCharge() {
@@ -648,7 +648,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 15: Management Rate
+    TEST 16: Management Rate
      */
     @org.junit.Test
     public void managementRate() {
@@ -658,7 +658,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 16: Student Rate
+    TEST 17: Student Rate
      */
     @org.junit.Test
     public void studentRate() {
@@ -668,7 +668,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 17: Staff Rate
+    TEST 18: Staff Rate - max charge
      */
     @org.junit.Test
     public void staffRate() {
@@ -679,7 +679,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 18: Visitor Free Rate (no charge)
+    TEST 19: Visitor Free Rate (no charge)
      */
     @org.junit.Test
     public void visitorFreeRate() {
@@ -690,7 +690,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 19: Management Free Rate (no charge)
+    TEST 20: Management Free Rate (no charge)
      */
     @org.junit.Test
     public void managementFreeRate() {
@@ -701,7 +701,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 19: Staff Free Rate (no charge)
+    TEST 21: Staff Free Rate (no charge)
      */
     @org.junit.Test
     public void staffFreeRate() {
@@ -712,7 +712,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-   TEST 20: Student rate - boundary
+   TEST 22: Student rate - boundary
     */
     @org.junit.Test
     public void studentRateBoundary() {
@@ -721,6 +721,4 @@ public class KellyDavidTestTask3 {
         assertTrue(BigDecimal.valueOf(5.02).compareTo(rt.calculate(periodStay)) == 0);
 
     }
-
-
 }

@@ -15,10 +15,10 @@ public class Rate {
     private ArrayList<Period> discount = new ArrayList<>();
     private ArrayList<Period> normal = new ArrayList<>();
 
-    private final CalculateChargeStrategy visitorRate = new VisitorRate();
-    private final CalculateChargeStrategy studentRate = new StudentRate();
-    private final CalculateChargeStrategy staffRate = new StaffRate();
-    private final CalculateChargeStrategy managementRate = new ManagementRate();
+    private final CalculateChargeStrategy visitorRate = new VisitorBehaviour();
+    private final CalculateChargeStrategy studentRate = new StudentBehaviour();
+    private final CalculateChargeStrategy staffRate = new StaffBehaviour();
+    private final CalculateChargeStrategy managementRate = new ManagementBehaviour();
 
     public Rate(CarParkKind kind, BigDecimal normalRate, BigDecimal discountedRate, ArrayList<Period> discountPeriods
             , ArrayList<Period> normalPeriods) {
