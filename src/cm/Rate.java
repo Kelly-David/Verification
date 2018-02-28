@@ -14,7 +14,6 @@ public class Rate {
     private BigDecimal hourlyDiscountedRate;
     private ArrayList<Period> discount = new ArrayList<>();
     private ArrayList<Period> normal = new ArrayList<>();
-
     private final CalculateChargeStrategy visitorRate = new VisitorBehaviour();
     private final CalculateChargeStrategy studentRate = new StudentBehaviour();
     private final CalculateChargeStrategy staffRate = new StaffBehaviour();
@@ -24,6 +23,10 @@ public class Rate {
             , ArrayList<Period> normalPeriods) {
         if (discountPeriods == null || normalPeriods == null) {
             throw new IllegalArgumentException("periods cannot be null");
+        }
+        // Task 3 - Check for arrayList of null
+        if(discountPeriods.contains(null) || normalPeriods.contains(null)) {
+            throw new IllegalArgumentException("ArrayList cannot contain null");
         }
         if (normalRate == null || discountedRate == null) {
             throw new IllegalArgumentException("The rates cannot be null");
