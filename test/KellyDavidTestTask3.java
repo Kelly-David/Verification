@@ -658,7 +658,7 @@ public class KellyDavidTestTask3 {
     }
 
     /*
-    TEST 17: Student Rate
+    TEST 17: Student Rate - first 5.00 no discount
      */
     @org.junit.Test
     public void studentRate() {
@@ -720,5 +720,15 @@ public class KellyDavidTestTask3 {
         Period periodStay = new Period(2,4);
         assertTrue(BigDecimal.valueOf(5.02).compareTo(rt.calculate(periodStay)) == 0);
 
+    }
+
+    /*
+   TEST 23: Visitor Rate charge less than 10.00
+    */
+    @org.junit.Test
+    public void visitorRateLess10() {
+        Rate rt = new Rate(CarParkKind.VISITOR, BigDecimal.valueOf(5), BigDecimal.valueOf(2), discountPeriods, normalPeriods);
+        Period periodStay = new Period(2,4);
+        assertTrue(BigDecimal.valueOf(0).compareTo(rt.calculate(periodStay)) == 0);
     }
 }

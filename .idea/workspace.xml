@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c722ff5-faf2-47fe-a73b-49ece05344c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/cm/CalculateChargeStrategy.java" afterPath="$PROJECT_DIR$/src/cm/CalculateChargeStrategy.java" />
-      <change beforePath="$PROJECT_DIR$/src/cm/Rate.java" afterPath="$PROJECT_DIR$/src/cm/Rate.java" />
+      <change beforePath="$PROJECT_DIR$/test/KellyDavidTestTask3.java" afterPath="$PROJECT_DIR$/test/KellyDavidTestTask3.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,10 +41,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Rate.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
+            <state relative-caret-position="-1195">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -55,8 +54,8 @@
       <file leaf-file-name="CalculateChargeStrategy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cm/CalculateChargeStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="69" lean-forward="true" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+            <state relative-caret-position="-141">
+              <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2636#2637#0" expanded="true" />
@@ -66,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KellyDavidTestTask3.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KellyDavidTestTask3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="488" column="0" lean-forward="true" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
+            <state relative-caret-position="317">
+              <caret line="712" column="0" lean-forward="true" selection-start-line="712" selection-start-column="0" selection-end-line="712" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,12 +115,12 @@
         <option value="$PROJECT_DIR$/src/CarParkStatus.java" />
         <option value="$PROJECT_DIR$/src/CarParkKind.java" />
         <option value="$PROJECT_DIR$/test/KellyDavidTestTask1.java" />
-        <option value="$PROJECT_DIR$/test/KellyDavidTestTask2.java" />
         <option value="$PROJECT_DIR$/src/Rate.java" />
         <option value="$PROJECT_DIR$/src/cm/CalculateStrategy.java" />
-        <option value="$PROJECT_DIR$/test/KellyDavidTestTask3.java" />
         <option value="$PROJECT_DIR$/src/cm/CalculateChargeStrategy.java" />
         <option value="$PROJECT_DIR$/src/cm/Rate.java" />
+        <option value="$PROJECT_DIR$/test/KellyDavidTestTask2.java" />
+        <option value="$PROJECT_DIR$/test/KellyDavidTestTask3.java" />
       </list>
     </option>
   </component>
@@ -226,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KellyDavidTestTask3">
+  <component name="RunManager" selected="JUnit.KellyDavidTestTask3.visitorRateLess10">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -328,14 +327,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="KellyDavidTestTask3.staffRateMaxCharge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KellyDavidTestTask3.visitorRateLess10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Verification" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KellyDavidTestTask3" />
-      <option name="METHOD_NAME" value="staffRateMaxCharge" />
+      <option name="METHOD_NAME" value="visitorRateLess10" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -410,18 +409,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffRateMaxCharge" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.se" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.freePeriod" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffArbitraryCharge" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.se" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.freePeriod" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffArbitraryCharge" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.visitorRateLess10" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffArbitraryCharge" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.freePeriod" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.se" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffRateMaxCharge" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.visitorRateLess10" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.staffArbitraryCharge" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.freePeriod" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.KellyDavidTestTask3.se" />
       </list>
     </recent_temporary>
   </component>
@@ -459,17 +458,11 @@
       <workItem from="1519647497169" duration="3342000" />
       <workItem from="1519652611417" duration="12443000" />
       <workItem from="1519806059731" duration="2340000" />
-      <workItem from="1520254851993" duration="679000" />
+      <workItem from="1520254851993" duration="3325000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KellyDavidTestTask3 - 2018.02.28 at 10h 45m 30s.xml">
-      <configuration name="KellyDavidTestTask3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KellyDavidTestTask3 - 2018.02.28 at 11h 17m 53s.xml">
-      <configuration name="KellyDavidTestTask3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="KellyDavidTestTask3 - 2018.03.05 at 13h 01m 38s.xml">
       <configuration name="KellyDavidTestTask3" configurationId="JUnit" />
     </history-entry>
@@ -482,9 +475,6 @@
     <history-entry file="KellyDavidTestTask3 - 2018.03.05 at 13h 05m 21s.xml">
       <configuration name="KellyDavidTestTask3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KellyDavidTestTask3_se - 2018.02.26 at 16h 37m 24s.xml">
-      <configuration name="KellyDavidTestTask3.se" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="KellyDavidTestTask3_staffArbitraryCharge - 2018.02.27 at 10h 28m 41s.xml">
       <configuration name="KellyDavidTestTask3.staffArbitraryCharge" configurationId="JUnit" />
     </history-entry>
@@ -494,9 +484,18 @@
     <history-entry file="KellyDavidTestTask3_staffArbitraryCharge - 2018.02.27 at 10h 29m 23s.xml">
       <configuration name="KellyDavidTestTask3.staffArbitraryCharge" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="KellyDavidTestTask3_visitorRateLess10 - 2018.03.05 at 16h 25m 33s.xml">
+      <configuration name="KellyDavidTestTask3.visitorRateLess10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KellyDavidTestTask3_visitorRateLess10 - 2018.03.05 at 16h 25m 52s.xml">
+      <configuration name="KellyDavidTestTask3.visitorRateLess10" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KellyDavidTestTask3_visitorRateLess10 - 2018.03.05 at 16h 28m 57s.xml">
+      <configuration name="KellyDavidTestTask3.visitorRateLess10" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71046000" />
+    <option name="totallyTimeSpent" value="73692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -511,7 +510,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22823529" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09529412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14513889" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.074117646" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -559,7 +558,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6000">
           <caret line="405" column="5" lean-forward="false" selection-start-line="405" selection-start-column="5" selection-end-line="405" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -889,14 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="627" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Rate.java" />
     <entry file="file://$PROJECT_DIR$/src/Period.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
@@ -906,20 +899,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
+    <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="488" column="0" lean-forward="true" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="627" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1195">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cm/CalculateChargeStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="69" lean-forward="true" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+        <state relative-caret-position="-141">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2636#2637#0" expanded="true" />
@@ -928,11 +929,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cm/Rate.java">
+    <entry file="file://$PROJECT_DIR$/test/KellyDavidTestTask3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="317">
+          <caret line="712" column="0" lean-forward="true" selection-start-line="712" selection-start-column="0" selection-end-line="712" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
