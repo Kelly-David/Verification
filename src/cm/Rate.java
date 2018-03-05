@@ -1,7 +1,6 @@
 package cm;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -116,13 +115,13 @@ public class Rate {
                         .multiply(BigDecimal.valueOf(discountRateHours)));
         switch (kind) {
             case VISITOR:
-                return visitorRate.calculate(rate).setScale(2, RoundingMode.CEILING);
+                return visitorRate.calculate(rate);
             case STUDENT:
-                return studentRate.calculate(rate).setScale(2, RoundingMode.CEILING);
+                return studentRate.calculate(rate);
             case STAFF:
-                return staffRate.calculate(rate).setScale(2, RoundingMode.CEILING);
+                return staffRate.calculate(rate);
             default: //MANAGEMENT
-                return managementRate.calculate(rate).setScale(2, RoundingMode.CEILING);
+                return managementRate.calculate(rate);
         }
     }
 }

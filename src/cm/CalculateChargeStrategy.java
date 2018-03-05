@@ -1,6 +1,7 @@
 package cm;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 interface CalculateChargeStrategy {
 
@@ -21,7 +22,9 @@ class VisitorBehaviour implements CalculateChargeStrategy {
     @Override
     public BigDecimal calculate(BigDecimal rate) {
         rate = (visitorRateDiscount.multiply(rate.subtract(visitorRateNoCharge)));
-        return (rate.compareTo(BigDecimal.ZERO) > 0) ? rate : BigDecimal.ZERO;
+        return (rate.compareTo(BigDecimal.ZERO) > 0)
+                ? rate.setScale(2, RoundingMode.CEILING)
+                : BigDecimal.ZERO;
     }
 }
 
@@ -45,7 +48,9 @@ class StudentBehaviour implements CalculateChargeStrategy {
                             .subtract(studentBaseLine))
                             .multiply(studentRateDiscount)));
         }
-        return (rate.compareTo(BigDecimal.ZERO) > 0) ? rate : BigDecimal.ZERO;
+        return (rate.compareTo(BigDecimal.ZERO) > 0)
+                ? rate.setScale(2, RoundingMode.CEILING)
+                : BigDecimal.ZERO;
     }
 }
 
@@ -60,7 +65,9 @@ class StaffBehaviour implements CalculateChargeStrategy {
      */
     @Override
     public BigDecimal calculate(BigDecimal rate) {
-        return (rate.compareTo(staffRateMaxCharge) <= 0) ? rate : staffRateMaxCharge;
+        return (rate.compareTo(staffRateMaxCharge) <= 0)
+                ? rate.setScale(2, RoundingMode.CEILING)
+                : staffRateMaxCharge;
     }
 }
 
@@ -73,6 +80,6 @@ class ManagementBehaviour implements CalculateChargeStrategy {
      */
     @Override
     public BigDecimal calculate(BigDecimal rate) {
-        return rate;
+        return rate.setScale(2, RoundingMode.CEILING);
     }
 }
